@@ -1,0 +1,28 @@
+{
+  "name": "lab-19-api-server",
+  "version": "1.0.0",
+  "description": "api server for lab19",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "jest --verbose --coverage",
+    "lint": "eslint --fix \"**/*.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michaelchapman-401-advanced-javascript/lab-19-api-server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/michaelchapman-401-advanced-javascript/lab-19-api-server/issues"
+  },
+  "homepage": "https://github.com/michaelchapman-401-advanced-javascript/lab-19-api-server#readme",
+  "dependencies": {
+    "dotenv": "^8.0.0",
+    "eslint": "^5.16.0",
+    "express": "^4.17.1",
+    "jest": "^24.8.0",
+    "@nmq/q": "^1.0.3"
+  }
+}
