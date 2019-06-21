@@ -9,7 +9,7 @@ const app = express();
 
 app.use(express.json());
 
-app.get('/database', (res) => {
+app.get('/database', (req, res) => {
   let data = {
     name: 'read',
     message: 'This is a get reaquest to database',
@@ -19,7 +19,7 @@ app.get('/database', (res) => {
   res.send('get');
 });
 
-app.post('/database', (res) => {
+app.post('/database', (req, res) => {
   let data = {
     name: 'create',
     message: 'This is a post reaquest to database',
@@ -29,7 +29,7 @@ app.post('/database', (res) => {
   res.send('post');
 });
 
-app.put('/database', (res) => {
+app.put('/database', (req, res) => {
   let data = {
     name: 'update',
     message: 'This is a put reaquest to database',
@@ -39,7 +39,7 @@ app.put('/database', (res) => {
   res.send('put');
 });
 
-app.delete('/database', (res) => {
+app.delete('/database', (req, res) => {
   let data = {
     name: 'delete',
     message: 'This is a delete reaquest to database',
@@ -49,7 +49,7 @@ app.delete('/database', (res) => {
   res.send('delete');
 });
 
-app.use((res) => {
+app.use((req, res) => {
   let data = {
     name: 'error',
     message: 'This is an error from the server',
