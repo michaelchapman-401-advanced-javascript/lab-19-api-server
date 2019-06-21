@@ -4,7 +4,7 @@
   "description": "api server for lab19",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
+    "start": "node index.js",
     "test": "jest --verbose --coverage",
     "lint": "eslint --fix \"**/*.js\""
   },
