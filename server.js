@@ -60,8 +60,8 @@ app.use((req, res) => {
 
 module.exports = {
   server: app,
-  start: port => {
-    let PORT = port || process.env.PORT || 3002;
+  start: () => {
+    let PORT = process.env.PORT;
     app.listen(PORT, () => console.log(`Listening on ${PORT}`));
   },
 };
